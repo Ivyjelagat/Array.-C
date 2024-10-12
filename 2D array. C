@@ -1,0 +1,25 @@
+//Array in c-2D arrays
+/*
+Author Ivy kemboi
+Date 12/10/2024
+Reg no CT101/G/24882/24
+*/
+
+#include <stdio.h>
+int main (){
+	int i;
+	int j;
+	int scores [3] [3]={
+		{20,30,50},
+		{10,60,35},
+		{12,15,56}
+	};
+	for(i=0; i<3; i++){
+		for(j=0; j<3; j++){
+			printf("scores [%d] [%d] =%d \n",i ,j,scores[i] [j]);
+		}
+	}
+	
+	return 0;
+	
+}
