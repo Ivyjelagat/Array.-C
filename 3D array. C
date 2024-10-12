@@ -1,0 +1,37 @@
+//Array in c-3D arrays
+/*
+Author Ivy kemboi
+Date 12/10/2024
+Reg no CT101/G/24882/24
+*/
+
+#include <stdio.h>
+int main (){
+	int i;
+	int j;
+	int k;
+	
+	int scores [2] [3] [3] ={{
+		{30,40,50},
+		{20,12,15},
+		{11,22,6},
+	},
+	{{60,56,80},
+		{30,42,66},
+		{42,9,2},}
+	};
+	
+	for(i=0 ; i<2 ;i ++){
+		for(j=0 ; j<3 ;j ++){
+			for(k=0 ;k<3 ;k ++){
+				
+				printf("scores [%d] [%d] [%d] = %d \n" ,i ,j,k,scores[i] [j] [k]);
+			}
+			
+		}
+		
+	}
+	
+				return 0;			
+		
+}
