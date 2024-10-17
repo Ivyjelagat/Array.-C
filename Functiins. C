@@ -1,0 +1,87 @@
+//calculation using a tailor_made function
+/*
+Author Ivy kemboi
+Date 14/10/2024
+Reg no CT101/G/24882/24
+*/
+
+#include <stdio.h>
+  float calculate_charges (int units);
+  float apply_surcharge (float total_bill);
+  float apply_minimumbill (float total_bill);
+  
+  
+  int main (){
+  	char customer_name [20];
+  	int customer_ID;
+  	int units_consumed;
+  	float final_bill;
+  	float total_bill;
+  	
+  	printf("enter customer_ID:");
+  	scanf("%d ," , & customer_ID);
+  	
+  	printf("enter customer_name:");
+  	scanf("%s", customer_name);
+  	
+  	printf("enter units_consumed:");
+  	scanf("%d" ,& units_consumed);
+  	
+  	total_bill =  units_consumed;
+  	 
+  	 
+  total_bill = apply_surcharge
+     
+     final_bill = apply_minimum_bill
+     
+     printf("\n electicity_bill\n");
+     
+     printf("customer_ID: %d\n" , customer_ID);
+     
+     printf("customer_name: %s\n" ,customer_name);
+     
+     printf("units_consumed: %d\n",units_consumed);
+     
+     printf("charge_per_unit: %.2f\n" ,total_bill/units_consumed);
+     
+     printf("total_amount to pay: %.2f\n" ,final_bill);
+     
+     
+     return 0;
+     
+}
+
+float calculate charges(int units){
+float charges = 0.0 ;
+
+if(unit <= 199){
+	charge = unit *1.20;}
+	
+	else if(unit >=200 && units < 400){
+		charge =unit *1.50;}
+		
+		else if(units >=400 && units <600){
+			charge =units *1.80;}
+			else{charges = units * 2.00;}
+			
+			return charge;
+			}
+			
+float apply_surcharge
+float (total_bill){
+if(total_bill >400){
+			total_bill + = total_bill * 0.15;}
+			
+			return total_bill;
+			}
+			
+float apply minimum_bill
+float (total_bill){
+						 if(total_bill < 100){
+						 	total_bill = 100;
+						 }
+						 
+						 return total_bill;
+}
+						
+			
